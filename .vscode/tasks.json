@@ -5,7 +5,7 @@
     "args": [],
     "tasks": [
         {
-            "taskName": "build",
+            "taskName": "publish",
             "args": [
                 "${workspaceRoot}/docker-debug-dotnet.csproj"
             ],

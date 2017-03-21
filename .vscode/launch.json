@@ -5,6 +5,7 @@
             "name": "DockerDebug",
             "type": "coreclr",
             "request": "launch",
+            "preLaunchTask": "publish",
             "cwd": "/app",
             "program": "/app/docker-debug-dotnet.dll",
             "sourceFileMap": {
