@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DockerDebug",
+            "type": "coreclr",
+            "request": "launch",
+            "cwd": "/app",
+            "program": "/app/docker-debug-dotnet.dll",
+            "sourceFileMap": {
+                "/app": "${workspaceRoot}/"
+            },
+            "pipeTransport": {
+                "debuggerPath": "/vsdbg/vsdbg",
+                "pipeProgram": "/bin/bash",
+                "pipeCwd": "${workspaceRoot}",
+                "pipeArgs": [
+                    "-c",
+                    "docker exec -i docker-debug-dotnet /vsdbg/vsdbg --interpreter=vscode"
+                ]
+            }
+        }
+    ]
+}

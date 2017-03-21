@@ -1,0 +1,15 @@
+version: '2'
+services:
+  auth:
+    container_name: docker-debug-dotnet
+    image: docker-debug-dotnet:debug
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+    - ASPNETCORE_ENVIRONMENT=Development
+    ports: 
+     - "6000:6000"
+    volumes: 
+      - ./bin/Debug/netcoreapp1.1/publish/:/app
