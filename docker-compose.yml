@@ -2,7 +2,7 @@ version: '2'
 services:
   auth:
     container_name: docker-debug-dotnet
-    image: docker-debug-dotnet:debug
+    image: docker-debug-dotnet
     build:
       context: .
       dockerfile: Dockerfile
