@@ -15,7 +15,7 @@ namespace docker_debug_dotnet
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseUrls("http://localhost:6000/")
+                .UseUrls("http://*:6000/")
                 .UseStartup<Startup>()
                 .Build();
 
