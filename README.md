@@ -1,0 +1,1 @@
+Sample of debugging dotnet in docker
