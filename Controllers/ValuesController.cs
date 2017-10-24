@@ -20,7 +20,7 @@ namespace docker_debug_dotnet.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return "id " + id.ToString();
         }
 
         // POST api/values
