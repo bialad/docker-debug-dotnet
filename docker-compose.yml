@@ -12,4 +12,4 @@ services:
     ports: 
      - "6000:6000"
     volumes: 
-      - ./bin/Debug/netcoreapp1.1/publish/:/app
+      - ./bin/Debug/netcoreapp2.0/publish/:/app

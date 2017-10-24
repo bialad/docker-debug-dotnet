@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:1.1.1-sdk
+FROM microsoft/dotnet:2.0.0-sdk
 ENV NUGET_XMLDOC_MODE skip
 
 WORKDIR /vsdbg
